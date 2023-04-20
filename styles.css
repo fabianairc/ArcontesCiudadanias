@@ -264,7 +264,7 @@ footer {
     margin: 5%;
   }
 }
-@media (max-width: 700px) {
+@media (max-width: 1500px) {
   .textos-header h1 {
     font-size: 20px;
     color: white;
