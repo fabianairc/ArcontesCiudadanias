@@ -22,22 +22,38 @@
 header {
   width: 100%;
   height: 800px;
-  background-image: url(./img/fernando-tavora-jN8wERXCnkE-unsplash.jpg);
+  background: hsla(191, 60%, 43%, 0.306), url(./img/prueba1.png); /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+      to right,
+      hsla(195, 60%, 35%, 0.495),
+      hsla(191, 60%, 43%, 0.354)
+    ),
+    url(./img/prueba1.png); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+      to right,
+      hsla(195, 46%, 40%, 0.709),
+      hsla(191, 80%, 41%, 0.896)
+    ),
+    url(./img/prueba1.png); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
   background-size: cover;
 }
 nav {
   padding: 30px 50px 0 0;
   text-align: right;
+  font-weight: bolder;
 }
 nav a {
   color: black;
   font-weight: 200;
-  text-decoration: none;
+  font-size: large;
+  text-decoration: solid;
   margin-right: 10px;
 }
 nav a:hover {
   text-decoration: overline;
   font-weight: bold;
+  color: white;
 }
 
 header .textos-header {
@@ -52,12 +68,14 @@ header .textos-header {
 .textos-header h1 {
   font-size: 50px;
   color: white;
+  font-weight: 800;
 }
 
 .textos-header h2 {
   font-size: 30px;
   color: white;
-  font-weight: 200;
+  font-weight: 500;
+  margin: 5%;
 }
 .wave {
   position: absolute;
@@ -99,10 +117,30 @@ header .textos-header {
 .imagen-servicios {
   float: left;
   margin: 0;
-  padding-left: 10%;
+  padding-left: 5%;
 }
+.lista {
+  padding: 0 0 10% 15%;
+}
+
+.lista ul li {
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
 .card {
   display: inline-flex;
+  margin: auto;
+}
+.nosotros {
+  margin: auto;
+}
+.container-textos-servicios {
+  padding-left: 0;
+  width: 70%;
+}
+.card-title {
+  font-weight: bolder;
 }
 form {
   width: 450px;
@@ -113,3 +151,34 @@ form {
   margin-top: 20px;
   border-radius: 7px;
 }
+form h2 {
+  color: white;
+  text-align: center;
+  margin: 0;
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+form input {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 7px;
+  box-sizing: border-box;
+  border: none;
+  border-radius: 10%;
+}
+
+textarea {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 7px;
+  box-sizing: border-box;
+  border: none;
+  border-radius: 10%;
+}
+
+@media (max-width: 480px) {
+  form {
+    width: 100%;
+  }
+} ;
