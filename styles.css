@@ -181,4 +181,41 @@ textarea {
   form {
     width: 100%;
   }
-} ;
+}
+
+.content {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+}
+.content-footer h6 {
+  color: rgb(61, 61, 180);
+  font-weight: bolder;
+}
+.content-footer p {
+  color: black;
+  font-weight: bold;
+  font-size: 0.75rem;
+}
+footer {
+  background: rgba(0, 0, 0, 0.267);
+  padding: 1%;
+  margin: auto;
+}
+@media (max-width: 600px) {
+  .content {
+    display: flex;
+    flex-direction: column;
+  }
+  .content-footer h6 {
+    color: rgb(61, 61, 180);
+    font-weight: bold;
+    font-size: 0.75rem;
+  }
+  .content-footer p {
+    color: black;
+    font-weight: 200;
+    font-size: 0.5rem;
+    width: 100%;
+  }
+}
