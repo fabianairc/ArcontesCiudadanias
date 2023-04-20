@@ -39,20 +39,26 @@ header {
   background-size: cover;
 }
 nav {
-  padding: 30px 50px 0 0;
+  padding: 30px 10px 0 0;
   text-align: right;
   font-weight: bolder;
+  padding-bottom: 15%;
+  position: fixed;
+  padding-left: 0;
 }
 nav a {
   color: black;
-  font-weight: 200;
-  font-size: large;
+  font-weight: 100;
+  font-size: 0.15;
   text-decoration: solid;
   margin-right: 10px;
+  background-color: rgba(240, 248, 255, 0.483);
+  padding-left: 1%;
+  padding-right: 1%;
 }
 nav a:hover {
   text-decoration: overline;
-  font-weight: bold;
+  font-weight: 300;
   color: white;
 }
 
@@ -63,6 +69,7 @@ header .textos-header {
   justify-content: center;
   flex-direction: column;
   text-align: center;
+  padding-top: 20%;
 }
 
 .textos-header h1 {
@@ -217,5 +224,18 @@ footer {
     font-weight: 200;
     font-size: 0.5rem;
     width: 100%;
+  }
+  nav a {
+    color: black;
+    font-weight: 100;
+    font-size: 0.7rem;
+    text-decoration: solid;
+    margin-right: 5px;
+    background-color: rgba(240, 248, 255, 0.483);
+    padding-left: 1%;
+    padding-right: 1%;
+  }
+  nav img {
+    display: none;
   }
 }
