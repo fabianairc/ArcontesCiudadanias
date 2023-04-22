@@ -38,29 +38,6 @@ header {
 
   background-size: cover;
 }
-nav {
-  padding: 30px 10px 0 0;
-  text-align: right;
-  font-weight: bolder;
-  padding-bottom: 15%;
-  position: fixed;
-  padding-left: 0;
-}
-nav a {
-  color: black;
-  font-weight: 100;
-  font-size: 0.15;
-  text-decoration: solid;
-  margin-right: 10px;
-  background-color: rgba(240, 248, 255, 0.483);
-  padding-left: 1%;
-  padding-right: 1%;
-}
-nav a:hover {
-  text-decoration: overline;
-  font-weight: 300;
-  color: white;
-}
 
 header .textos-header {
   display: flex;
@@ -73,21 +50,16 @@ header .textos-header {
 }
 
 .textos-header h1 {
-  font-size: 50px;
+  font-size: 2rem;
   color: white;
   font-weight: 800;
 }
 
 .textos-header h2 {
-  font-size: 30px;
+  font-size: 1.5rem;
   color: white;
   font-weight: 500;
   margin: 5%;
-}
-.wave {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
 }
 
 .container-servicios {
@@ -101,8 +73,8 @@ header .textos-header {
   float: right;
 }
 .container-textos-servicios h3 {
-  font-size: 15px;
-  font-weight: bold;
+  font-size: 1.5rem;
+  font-weight: bolder;
   padding-top: 30px;
 }
 .container-textos-servicios h3 span {
@@ -112,7 +84,7 @@ header .textos-header {
   display: inline-block;
   text-align: center;
   width: 30px;
-  height: 25px;
+  height: 30px;
   padding: 3px;
   box-shadow: inset;
 }
@@ -127,12 +99,12 @@ header .textos-header {
   padding-left: 5%;
 }
 .lista {
-  padding: 0 0 10% 15%;
+  padding: 0 0 5% 15%;
 }
 
 .lista ul li {
-  margin-top: 5%;
-  margin-bottom: 5%;
+  margin-top: 2%;
+  margin-bottom: 2%;
 }
 
 .card {
@@ -264,17 +236,29 @@ footer {
     margin: 5%;
   }
 }
-@media (max-width: 1500px) {
-  .textos-header h1 {
-    font-size: 20px;
-    color: white;
-    font-weight: 500;
-  }
 
-  .textos-header h2 {
-    font-size: 10px;
-    color: white;
+@media (max-width: 1300px) {
+  nav {
+    padding: 30px 10px 0 0;
+    text-align: right;
+    font-weight: bolder;
+    padding-bottom: 15%;
+    position: fixed;
+    padding-left: 0;
+  }
+  nav a {
+    color: black;
+    font-weight: 100;
+    font-size: 0.15;
+    text-decoration: solid;
+    margin-right: 10px;
+    background-color: rgba(240, 248, 255, 0.483);
+    padding-left: 1%;
+    padding-right: 1%;
+  }
+  nav a:hover {
+    text-decoration: overline;
     font-weight: 300;
-    margin: 5%;
+    color: white;
   }
 }
